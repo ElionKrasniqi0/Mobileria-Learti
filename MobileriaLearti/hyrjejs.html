@@ -1,0 +1,150 @@
+<html>
+
+<head>
+    <title>ARRA Academy - Eksperimente me gjuhen JavaScript(JS)</title>
+</head>
+
+<body>
+
+
+    <h1>ARRA Academy - Eksperimente me gjuhen JavaScript(JS)</h1>
+    <!-- sh1: ndryshimi i permbajtjes/contentit se HTML permes JS -->
+    <h2>1.Si ndryshohet permbajtja ne kuader te HTML permes JS?</h2>
+    <p id="emri_im">Nese keni deshire me e dite autorin e kesaj faqeje shtyp butonin e meposhtem.</p>
+    <button type="button" onclick="document.getElementById('emri_im').innerHTML = 'Autori i punimit te kesaj faqeje eshte ARRA Academy.'">Shfaq Autorin</button>
+
+
+    <!-- sh2:ndryshimi i elementit html dhe css permes js -->
+    <h2>2.Si ndryshohet pamja e nje elementi HTML te stilizuar me CSS permes JS?</h2>
+    <p>Pas modulit 03 HTML, CSS, JS &amp; WebHosting, cili modul pason pas tij dhe sa ore ka ne dispozicion? </p>
+    <p id="fshehur" style="display: none"> Pas modulit 03 pason moduli 04 i cili quhet PHP &amp; MYSQL DataBase i cili ka ne dispozicion 23 ore!</p>
+    <button type="button" onclick="document.getElementById('fshehur').style.display='block'">Shfaqe Pergjigjen</button>
+
+
+    <!-- sh3 -->
+    <h2>3.Si ekzekutohet nje funksion i thirrur permes skriptes ne HTML?</h2>
+    <p>ARRA Academy ofron trajnime intenzive ne fushat e teknologjise...</p>
+    <p id="paragrafi_ri" style="display: none"></p>
+    <button type="button" onclick="krijimiparagraf()">Me shume...</button>
+    <script>
+        function krijimiparagraf() {
+            document.getElementById("paragrafi_ri").innerHTML = "...permes nje planprogrami i cili eshte i pershtatshem per te gjithe!"
+        }
+
+    </script>
+
+
+    <!-- sh4 -->
+    <h2>4.Si behet llogaritja permes operatoreve aritmetikore ne JS?(+, -, *, /, %)</h2>
+    <p>Brenda skriptes eshte shkruajtur funksioni i cili ekzekuton rezultatin e nje detyre te thjeshte matematikore me shprehjne: 20-10+5=?</p>
+    <p>Rezultati eshte :</p>
+    <p id="rezultati"></p>
+    <script>
+        document.getElementById("rezultati").innerHTML = 20 + 10 - 5;
+
+    </script>
+
+
+    <!-- sh5 -->
+    <h2>5.Si ekzekutohet nje paralajmrues(alert/notification)</h2>
+    <p>Kodi per te ekzekutuar nje paralajmrues eshte shkruajtur ne pjesen e brendshme te skriptes dhe ekzekutohet automatikisht kur te rifreskohet apo hapet faqja!</p>
+    <script>
+        //window.alert("Afati per trajnimin e radhes eshte hapur dhe fillon ne muajin shtatore")
+
+    </script>
+
+
+    <!-- sh6 -->
+    <h2>6.Si perdoren dhe shfrytezohen variablat ne kuader te JS?</h2>
+    <p>Jane krijuar 2 variabla ku x = 10-7 dhe y = x * 5 sa eshte rezultati ?</p>
+    <p id="variablat"></p>
+    <script>
+        //menyra e pare e krijimit te variables
+        var x, y;
+        /*menyra e dyte
+        var x
+        var y
+        */
+
+
+        x = 10 - 7; //vlera e x pas gjenerimit te rezultatit eshte 3
+        y = x * 5; //vlera e y tanime eshte 15
+
+        document.getElementById("variablat").innerHTML = y
+
+    </script>
+
+    <!-- sh7 -->
+    <h2>7.Si mund te printohet komplet pamja e faqes aktuale permes JS?</h2>
+    <button type="button" onclick="window.print()">Printo Faqen</button>
+
+
+    <style>
+        body {
+            padding: 10px 40px;
+            border: none;
+            margin: 10 200px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+            background-color: #9d7f71;
+            transform-style: preserve-3d;
+            transition: all 0.5s ease;
+        }
+
+
+
+        h1 {
+            padding: 10px;
+            font-size: 25px;
+            color: white;
+            background-color: #904534;
+            border-radius: 15px;
+            text-align: center
+        }
+
+
+        h2 {
+            padding: 10px;
+            font-size: 25px;
+            color: white;
+            background-color: #904534;
+            border-radius: 15px;
+            text-align: center
+        }
+
+
+        p {
+            padding: 10px;
+            font-size: 25px;
+            color: white;
+            background-color: #e3b194;
+            border-radius: 10px;
+            text-align: center
+        }
+
+
+        button {
+            display: flex;
+            margin: auto;
+            padding: 10px 30px;
+            background-color: #904534;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            color: white;
+            cursor: pointer;
+        }
+
+
+        button:hover {
+            background-color: #FF9100;
+            transition: 0.5s;
+            color: white;
+        }
+
+    </style>
+
+</body>
+
+</html>
